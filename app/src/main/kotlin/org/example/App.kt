@@ -86,6 +86,22 @@ fun mostrarNumerosPares() {
     } while (k <= 10)
 }
 
+fun factorial(n: Int): Int {
+    return if (n <= 1) 1 else n * factorial(n - 1)
+}
+
+fun saludar(nombre: String, edad: Int = 0) {
+    println("Hola $nombre, tienes $edad años")
+}
+
+fun elevarExponente() {
+    val base2: Int = 2
+    val exponente2: Int = 2
+
+    val resultado = Math.pow(base2.toDouble(), exponente2.toDouble())
+    println("La potencia es: $resultado")
+}
+
 fun main() {
     NombreEdad()
 }
