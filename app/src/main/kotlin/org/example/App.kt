@@ -10,16 +10,34 @@ class App {
         }
 }
 
-fun NombreApellido(){
+fun NombreEdad(){
     val nombre: String = "Facu"
     val edad: Int = 16
-
 
     println("Hola: $nombre")
     println("Tenes: $edad")
 }
 
+fun mostrarTiposDeDatos() {
+    val nombre: String = "Juan"
+    val edad: Int = 25
+    val altura: Double = 1.75
+    val esEstudiante: Boolean = true
+    
+    println("Nombre: $nombre")
+    println("Edad: $edad")
+    println("Altura: $altura")
+    println("Es estudiante: $esEstudiante")
+}
+
+fun triangulorec(){
+    val base: Double = 5.8
+    val altura: Double = 3.7
+
+    val area = base*altura
+    println("El area de triangulo es: $area m2")
+}
+
 fun main() {
-    println("¡Hola, Kotlin!")
-    NombreApellido()
+    NombreEdad()
 }
