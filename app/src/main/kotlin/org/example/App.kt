@@ -38,6 +38,27 @@ fun triangulorec(){
     println("El area de triangulo es: $area m2")
 }
 
+
+
+fun esParOImpar(numero: Int = 5): String {
+    return when {
+        numero % 2 == 0 -> "Par"
+        else -> "Impar"
+    }
+}
+
+fun PositivoNegativo(){
+    val numero2: Double = -5.0
+
+    if (numero2 > 0){
+        println("El numero es positivo")
+    }
+
+    if (numero2 < 0){
+        println("El numero es negativo ")
+    }
+}
+
 fun main() {
     NombreEdad()
 }
